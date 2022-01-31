@@ -14,11 +14,6 @@ public class LoginViewModel extends ViewModel {
         userRepository = Repository.getInstance(UserDatabase.getAppDatabase(context).userDao());
     }
 
-    void createUser(String username, String password)
-    {
-        userRepository.insertUser(username, password);
-    }
-
     boolean checkValidLogin(String username, String password)
     {
         return userRepository.isValidAccount(username, password);

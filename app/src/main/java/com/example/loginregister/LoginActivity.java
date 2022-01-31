@@ -1,11 +1,9 @@
 package com.example.loginregister;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
         txtUsername = findViewById(R.id.edt_username);
         txtPassword = findViewById(R.id.edt_password);
         viewModel = new LoginViewModel(getApplicationContext());
-//        viewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
 
         linkRegister.setOnClickListener(new View.OnClickListener() {
             @Override
